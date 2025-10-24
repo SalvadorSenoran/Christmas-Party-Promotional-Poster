@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Link Swiper's CSS -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <title>Christmas Party Poster</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+        .main {
+            height: 100vh;
+            width: 100%;
+        }
+        .wrapper, 
+        .slide {
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+        .slide {
+            overflow: hidden;
+        }
+        .slide::before {
+            content: "";
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.4);
+            z-index: 10;
+        }
+        .slide .image {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+        .slide .image_data {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            width: 100%;
+            z-index: 100;
+        }
+        .image_data span.text {
+            font-size: 14px;
+            font-weight: 400;
+            color: #eeeeee;
+        }
+        .image_data h2 {
+            font-size: 45px;
+            font-weight: 600;
+            color: #eeeeee;
+        }
+        a.button1 {
+            display: inline-block;
+            padding: 10px 40px;
+            border-radius: 25px;
+            color: #303030;
+            background: #eeeeee;
+            text-decoration: none;
+            margin-top: 25px;
+            transition: all 0.3s ease;
+        }
+        a.button2 {
+            display: inline-block;
+            padding: 10px 20px;
+            border-radius: 25px;
+            color: #303030;
+            background: #eeeeee;
+            text-decoration: none;
+            margin-top: 25px;
+            transition: all 0.3s ease;
+        }
+        a.button2a {
+            display: inline-block;
+            padding: 10px 20px;
+            border-radius: 25px;
+            color: #303030;
+            background: #eeeeee;
+            text-decoration: none;
+            margin-top: 25px;
+            transition: all 0.3s ease;
+        }
+        a.button3 {
+            display: inline-block;
+            padding: 10px 20px;
+            border-radius: 25px;
+            color: #303030;
+            background: #eeeeee;
+            text-decoration: none;
+            margin-top: 25px;
+            transition: all 0.3s ease;
+        }
+        a.button3a {
+            display: inline-block;
+            padding: 10px 20px;
+            border-radius: 25px;
+            color: #303030;
+            background: #eeeeee;
+            text-decoration: none;
+            margin-top: 25px;
+            transition: all 0.3s ease;
+        }
+        a.button4 {
+            display: inline-block;
+            padding: 10px 20px;
+            border-radius: 25px;
+            color: #303030;
+            background: #eeeeee;
+            text-decoration: none;
+            margin-top: 25px;
+            transition: all 0.3s ease;
+        }
+        a.button1:hover {
+            color: #eeeeee;
+            background-color: #303030;
+        }
+        a.button2:hover {
+            color: #eeeeee;
+            background-color: #303030;
+        }
+        a.button2a:hover {
+            color: #eeeeee;
+            background-color: #0A400C;
+        }
+        a.button3:hover {
+            color: #eeeeee;
+            background-color: #303030;
+        }
+        a.button3a:hover {
+            color: #eeeeee;
+            background-color: #FFB200;
+        }
+        a.button4:hover {
+            color: #eeeeee;
+            background-color: #8C1007;
+        }
+        .nav_btn {
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.3);
+        }
+        .nav_btn:hover {
+            background: rgba(255, 255, 255, 0.4);
+        }
+        .swiper-button-next {
+            right: 25px;
+        }
+        .swiper-button-prev {
+            left: 25px;
+        }
+        .nav_btn::before, .nav_btn::after {
+            font-size: 25px;
+            color: #eeeeee;
+        }
+        .swiper-pagination-bullet {
+            opacity: 1;
+            height: 7.5px;
+            width: 7.5px;
+            background-color: #eeeeee;
+        }
+        .swiper-pagination-bullet-active {
+            border: 1px solid #eeeeee;
+            background-color: #303030;
+        }
+    </style>
+</head>
+<body>
+    
+    <section class="main swiper mySwiper">
+        <div class="wrapper swiper-wrapper">
+            <div class="slide swiper-slide">
+                <img src="christmas-tree-and-red-gift-box.jpg" alt="Christmas Tree 1" class="image">
+                <div class="image_data">
+                    <span class="text">A Class Christmas Party 2025</span>
+                    <h2>
+                        Code The Christmas Magic
+                    </h2>
+                    <a href="numbers picture page/numbers.html" class="button3">of 11 Numbers</a>
+                </div>
+            </div>
+            <div class="slide swiper-slide">
+                <img src="christmas-tree-and-red-gift-box2.jpg" alt="Christmas Tree 2" class="image">
+                <div class="image_data">
+                    <span class="text">Venue/Date</span>
+                    <h2>
+                        Unida Christian Colleges Gymnasium
+                    </h2>
+                    <a href="#" class="button1">Sat</a>
+                    <a href="#" class="button2">25 Dec</a>
+                    <a href="#" class="button3">At 03 PM</a>
+                </div>
+            </div>
+            <div class="slide swiper-slide">
+                <img src="christmas-tree-and-red-gift-box3.jpg" alt="Christmas Tree 3" class="image">
+                <div class="image_data">
+                    <span class="text">Dress Code</span>
+                    <h2>
+                        Tech-Inspired or Festive Style
+                    </h2>
+                    <a href="#" class="button4">Red</a>
+                    <a href="#" class="button2a">Green</a>
+                    <a href="#" class="button3a">Gold</a>
+                </div>
+            </div>
+            <div class="slide swiper-slide">
+                <img src="christmas-tree-and-red-gift-box4.jpg" alt="Christmas Tree 4" class="image">
+                <div class="image_data">
+                    <span class="text">Jingle and Mingle</span>
+                    <h2>
+                        Event Highlights
+                    </h2>
+                    <a href="#" class="button1">Mini Games</a>
+                    <a href="#" class="button2">Surprise Performances</a>
+                    <a href="#" class="button3">Exchange Gift</a>
+                </div>
+            </div>
+            <div class="slide swiper-slide">
+                <img src="christmas-tree-and-red-gift-box6.jpg" alt="Christmas Tree 6" class="image">
+                <div class="image_data">
+                    <span class="text">Special Reminder</span>
+                    <h2>
+                        Contact us through
+                    </h2>
+                    <a href="https://www.facebook.com/profile.php?id=61578908421372" class="button2">FB Page: XI-NUMBERS</a>
+                    <a href="https://mail.google.com/mail/u/0/?fs=1&to=salvadorsenoran@gmail.com&tf=cm" class="button3">RSVP at: salvadorsenoran@gmail.com</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="swiper-button-next nav_btn"></div>
+        <div class="swiper-button-prev nav_btn"></div>
+        <div class="swiper-pagination"></div>
+    </section>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      loop: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+    </script>
+</body>
+</html>
